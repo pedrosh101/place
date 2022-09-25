@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: NHG;
+  src: url(./fonts/NHaasGroteskTXPro-55Rg.ttf)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: AVN;
+  src: url(./fonts/AvenirNextLTPro-Regular.otf)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+:root {
+  --clr1: #fff;
+  --clr2: #143862;
+  --clr3: rgb(189, 204, 223);
+  --clr4: #76549A;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+html, body {
+  overflow-x: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+ul {
+  list-style: none;
+  font-family: NHG;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--clr1);
+  font-family: NHG;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 100;
+  line-height: 1;
+}
+
+h5 {
+  font-family: NHG;
+}
+
+
+p {
+  font-family: AVN;
+  font-size: 1em;
+  letter-spacing: .8px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--clr2);
+  font-size: 15px;
+  font-weight: bold;
+  padding: 17px 51px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: var(--clr3);
+}
+
+button:active {
+  position: relative;
+  top: 1px;
 }

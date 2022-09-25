@@ -1,0 +1,35 @@
+.heroSection{
+    min-height: 250vh;
+}
+
+
+.heroSection h1{
+    font-size: 8em;
+    color: var(--clr2);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.heroSection h3{
+    font-family: AVN;
+    font-size: 1.7em;
+    line-height: 1.5em;
+}
+
+.imgContainer {
+    background-image: url(/public/img/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.heroText{
+    max-width: 40%;
+}
+
+.heroText > *:not(:last-child) {
+    margin-bottom: .2em; 
+} 
