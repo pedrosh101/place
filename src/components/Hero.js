@@ -1,31 +1,35 @@
 import React from "react";
-import { Image } from "./core/Image";
 import "./Hero.css";
-import imgForest from '../assets/img-forest.jpg'
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import heroImg from "../assets/heroImg.jpg"
 
 function Hero() {
   return (
     <>
       <section className="heroSection">
-        <div className="imgContainer">
-          {/* <img
-            src="./img/hero.jpg"
-            alt="office"
-            className="imgHero"
-          ></img> */}
-          <div className="heroText">
-            <h1>Place</h1>
-            <h3>
-              Nunc sed sapien nec quam placerat posuere. Aliquam congue
-              vestibulum enim et feugiat. Morbi non dictum orci, ultricies
-              malesuada eros.
-            </h3>
-          </div>
-        </div>
+        <Parallax pages={2}>
+          <ParallaxLayer offset={0} speed={0.2} factor={1.3} style={{backgroundImage: `url(${heroImg})`, backgroundSize: 'cover'}}>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0}>
+            <div className="imgContainer">
+              <div className="heroText">
+                <h1>Place</h1>
+                <h3>
+                  Nunc sed sapien nec quam placerat posuere. Aliquam congue
+                  vestibulum enim et feugiat. Morbi non dictum orci, ultricies
+                  malesuada eros.
+                </h3>
+              </div>
+            </div>
+          </ParallaxLayer>
 
-        <Image src={imgForest} alt="Forest Background" height="50vh" speed={1}>
-          <h1 className="image-text">42525424</h1>
-        </Image>
+
+          <ParallaxLayer offset={1} speed={0.2}>
+            <div className="partTwo">
+              <h1>parte dois</h1>
+            </div>
+          </ParallaxLayer>
+        </Parallax>
       </section>
     </>
   );
