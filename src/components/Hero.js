@@ -26,7 +26,7 @@ function Hero() {
 
           <ParallaxLayer offset={1} speed={0.2}>
             <div className="partTwo">
-              <h1>parte dois</h1>
+              <h1>i'm coming back soon!</h1>
             </div>
           </ParallaxLayer>
         </Parallax>
