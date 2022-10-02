@@ -1,18 +1,35 @@
-.layerOne{
+.heroSection{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.imgContainer {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
 }
 
-.heroSection{
-    min-height: 100vh;
+.background {
+    transform: translateZ(-10px) scale(2);
+    position: absolute;
+    height: 120%;
+    width: 103%;
+    object-fit: cover;
+    z-index: -1;
 }
+
 
 .heroSection h1{
     font-size: 8em;
     color: var(--clr1);
     font-family:'Times New Roman', Times, serif;
+
 }
 
 .heroSection h3{
@@ -20,38 +37,48 @@
     font-family: AVN;
     font-size: 1.7em;
     line-height: 1.5em;
+
 }
 
-.imgContainer {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    top: 0;
-    left: 50%;
-}
-
-
-.heroText{
-    min-width: 100%;
+.texts{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30%;
+    padding: 0 20%;
+    text-align: center;
+
 }
 
-.heroText > *:not(:last-child) {
-    margin-bottom: .2em; 
-} 
-
 .partTwo{
-    background-color: black;
+    background-color: var(--clr1);
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 11em 0;
+    gap: 8em;
+}
 
+.partTwo p, .partTwo h3{
+    color: var(--clr2);
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-bottom: 18px;
+}
+
+.picLeft{
+    height: 130vh;
+}
+
+.picRight{
+    height: 66vh;   
+}
+
+.rightText{
+    max-width: 80%;
+}
+
+.pic3{
+    height: 140vh;
+    width: 100vw;
+    object-fit: cover;
 }

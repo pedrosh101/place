@@ -10,7 +10,9 @@ function App() {
   return (
     <>
       <Router>
+
         <Hero />
+
       </Router>
     </>
   );

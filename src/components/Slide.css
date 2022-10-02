@@ -1,0 +1,45 @@
+.slideContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 100vw;
+    background-color: var(--clr2);
+    text-align: center;
+}
+
+
+.text {
+    position: absolute;
+    color: var(--clr2);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 2em;
+}
+
+.userName {
+    font-size: 2.8em;
+    margin-bottom: 6px;
+}
+
+.userText {
+    font-size: 1.5em;
+    font-weight: 100;
+    max-width: 34vw;
+}
+
+@media all and (max-width: 50em) {
+
+    .userName {
+        font-size: 2.2em;
+    }
+
+    .userText {
+        font-size: 1.2em;
+        max-width: 80vw;
+    }
+
+}
