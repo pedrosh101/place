@@ -39,6 +39,7 @@ function Hero() {
                 natoque penatibus et magnis dis parturient montes, nascetur
                 ridiculus mus. In hac habitasse platea dictumst.
               </p>
+              <a href="/" class="myButton">fale conosco</a>
             </div>
             <img src={pic2} alt="idk2" className="picRight" />
           </div>

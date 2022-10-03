@@ -29,15 +29,14 @@
     font-size: 8em;
     color: var(--clr1);
     font-family:'Times New Roman', Times, serif;
-
+    margin-bottom: 14px;
 }
 
 .heroSection h3{
     color: var(--clr1);
     font-family: AVN;
-    font-size: 1.7em;
+    font-size: 1.6em;
     line-height: 1.5em;
-
 }
 
 .texts{
@@ -45,7 +44,7 @@
     flex-direction: column;
     padding: 0 20%;
     text-align: center;
-
+    margin-bottom: 5em;
 }
 
 .partTwo{
@@ -65,6 +64,29 @@
     margin-bottom: 18px;
 }
 
+.myButton {
+	background-color:transparent;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:var(--clr2);
+	font-family:NHG;
+	font-size:1.2em;
+	padding:.8em 2em;
+	text-decoration:none;
+    margin-bottom: 2em;
+}
+
+.myButton:hover {
+	background-color:var(--clr3);
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 .picLeft{
     height: 130vh;
 }
@@ -81,4 +103,35 @@
     height: 140vh;
     width: 100vw;
     object-fit: cover;
+}
+
+@media all and (max-width: 50em){
+    .heroSection h1{
+        font-size: 6em;
+    }
+    
+    .heroSection h3{
+ 
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+
+    .picLeft{
+        display: none;
+    }
+
+    .picRight{
+        height: 50vh;
+    }
+
+    .rightText{
+        max-width: 60%;
+        padding: 2em;
+    }
+
+    .partTwo{
+
+        padding: 4em 0;
+
+    }
 }

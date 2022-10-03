@@ -4,25 +4,31 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 20em;
+    height: 22em;
     width: 100vw;
-    background-color: var(--clr2);
+    background-color: var(--clr1);
     text-align: center;
 }
 
 
 .text {
     position: absolute;
-    color: var(--clr2);
     display: flex;
     flex-direction: column;
     padding: 12px;
     margin: 2em;
 }
 
+.text h5 {
+    color: var(--clr2);
+
+}
+
 .userName {
-    font-size: 2.8em;
-    margin-bottom: 6px;
+    font-size: 1em;
+    margin-top: 18px;
+    font-style: italic;
+    color: var(--clr2);
 }
 
 .userText {
@@ -34,12 +40,18 @@
 @media all and (max-width: 50em) {
 
     .userName {
-        font-size: 2.2em;
+        font-size: 1.3em;
     }
 
     .userText {
-        font-size: 1.2em;
+        font-size: 1.3em;
         max-width: 80vw;
+    }
+
+    .slideContent {
+
+        height: 26em;
+
     }
 
 }

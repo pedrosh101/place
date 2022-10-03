@@ -14,7 +14,7 @@ function Navbar() {
     <>
 
       <nav className="navbar">
-        <div className="navbar-container">
+        <div className="navbarContainer">
           <Link to="/" style={{ textDecoration: 'none' }} div className="titles">
             <img src="icons/bslogo.png" className="logo" alt="logo" />
  
