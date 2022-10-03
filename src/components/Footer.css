@@ -41,6 +41,20 @@
     font-family: FUT;
 }
 
+.social-icon-link {
+    color: var(--clr1);
+    font-size: 1.5em;
+}
+
+.social-icons{
+    margin-top: 1em;
+
+}
+
+.facebook , .instagram, .whatsapp{
+    margin-right: 20px;
+}
+
 
 @media all and (max-width: 50em) {
     .footerInfo {

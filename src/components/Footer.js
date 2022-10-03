@@ -34,7 +34,45 @@ function Footer() {
           <div className="row">
             <h3>Endereço</h3>
             <div className="items">
+              <a
+              href="https://www.facebook.com/place.fitness.center/"
+                className="social-icon-link facebook"
+                rel="noreferrer"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i className="fab fa-facebook-f" />
+              </a>
 
+              <a
+                href="https://www.instagram.com/place.fitness.center/"
+                className="social-icon-link instagram"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+              >
+                <i className="fab fa-instagram" />
+              </a>
+
+              <a
+                href="https://wa.me/351289822362"
+                className="social-icon-link whatsapp"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Whatsapp"
+              >
+                <i className="fab fa-whatsapp" />
+              </a>
+
+              <a
+                href="mailto:geral@placefitnesscenter.pt"
+                className="social-icon-link mail"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Mail"
+              >
+                <i className="fa fa-envelope"></i>
+              </a>
             </div>
           </div>
         </div>
